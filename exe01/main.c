@@ -2,10 +2,8 @@
 #include "functions.h"
 
 int main() {
-
-    int a, b, s ;
-  
   // ENTRADA DE DADOS
+  int a, b, s;
   scanf("%d %d", &a, &b);
 
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
@@ -14,5 +12,5 @@ int main() {
   // SAIDA - IMPRIMINDO O RESULTADO
   printf("SOMA = %d\n", s);
 
-  return(0);
+  return 0;
 }
