@@ -1,18 +1,22 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "functions.h"
 
 int main() {
-
-    int a, b, s;
+  int n, m;
   
   // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  scanf("%d", &n);
+  int *vetor = (int*)malloc(n*sizeof(int));
 
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  for(int i = 0; i < n; i++) // monta o vetor
+    scanf("%d", &vetor[i]);
+  m = menor(vetor, n);
 
   // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  printf("MENOR = %d\n", m);
+  free(vetor);
 
-  return(0);
+  return 0;
 }
