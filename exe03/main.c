@@ -12,7 +12,7 @@ int main() {
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
   for(int i = 0; i < n; i++) 
     scanf("%d", &vetor[i]);
-  menor_maior(vetor, n, &menor, &maior);
+  maior = menor_maior(vetor, n, &menor, maior);
 
   // SAIDA - IMPRIMINDO O RESULTADO
   printf("MENOR = %d\nMAIOR = %d", menor, maior);

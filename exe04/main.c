@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "functions.h"
 
 int main() {
 
-    int a, b, s;
+  int a, b, s;
   
   // ENTRADA DE DADOS
   scanf("%d %d", &a, &b);
