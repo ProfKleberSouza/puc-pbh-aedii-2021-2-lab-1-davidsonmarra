@@ -6,11 +6,11 @@
 
 int main() {
   // ENTRADA DE DADOS
-  char palavra[100];
-  fgets(palavra, 100, stdin);
+  char texto[100];
+  fgets(texto, 100, stdin);
 
   // PROCESSAMENTO E SAIDA
-  numero_vogais(palavra);
+  numero_vogais(texto);
 
   return 0;
 }
