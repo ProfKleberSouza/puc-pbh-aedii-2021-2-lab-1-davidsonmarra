@@ -1,18 +1,21 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
 #include "functions.h"
 
 int main() {
-
-    int a, b, s;
-  
   // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  int aux = 0;
+  char texto[100];
+  fgets(texto, 100, stdin);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  // PROCESSAMENTO E SAIDA
+  if(is_palindromo(texto, aux)) 
+    printf("SIM");
+  else 
+    printf("NAO");
 
-  return(0);
+  return 0;
 }
