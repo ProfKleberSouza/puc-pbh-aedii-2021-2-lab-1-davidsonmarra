@@ -2,17 +2,15 @@
 #include "functions.h"
 
 int main() {
-
-    int a, b, s;
-  
   // ENTRADA DE DADOS
+  int a, b, r;
   scanf("%d %d", &a, &b);
 
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  r = mdc(a, b);
 
   // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  printf("MDC = %d\n", r);
 
   return(0);
 }
