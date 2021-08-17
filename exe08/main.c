@@ -9,7 +9,7 @@ int main() {
   int aux = 0;
   char texto[100];
   fgets(texto, 100, stdin);
-
+  fflush(stdin);
 
   // PROCESSAMENTO E SAIDA
   if(is_palindromo(texto, aux)) 

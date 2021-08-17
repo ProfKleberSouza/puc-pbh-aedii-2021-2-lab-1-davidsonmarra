@@ -1,5 +1,5 @@
 bool is_palindromo(char texto[], int aux) {
-  int tamanho = strlen(texto) - 2;
+  int tamanho = strlen(texto) - 1;
   if(texto[aux] != texto[tamanho - aux]) 
     return false;
   else
