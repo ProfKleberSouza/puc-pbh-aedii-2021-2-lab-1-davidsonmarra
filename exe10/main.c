@@ -1,18 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
 #include "functions.h"
 
 int main() {
-
-    int a, b, s;
-  
   // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  int n, cont = 1;
+  scanf("%d", &n);
+  if(n == 0) {
+    printf("0");
+    return 0;
+  }
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  // PROCESSAMENTO E SAIDA
+  int *vetor = (int*)malloc(n*sizeof(int));
+  for(int i = 0; i < n; i++) {
+    vetor[i] = 0;
+    printf("%d", vetor[i]);
+  }
+  tabela_verdade(n, vetor, cont);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+  return 0;
 }

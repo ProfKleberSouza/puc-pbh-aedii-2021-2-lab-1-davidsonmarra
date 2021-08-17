@@ -1,18 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "functions.h"
 
 int main() {
-
-    int a, b, s;
-  
   // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  int m, n, aux;
+  scanf("%d %d", &m, &n);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  char *vetor = (char*)malloc((n+m)*sizeof(char));
+  // PROCESSAMENTO E SAIDA
+  monta_placar(m, n, vetor);
+  placar_possiveis(m, n, vetor, aux);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+  return 0;
 }
