@@ -9,15 +9,24 @@ void monta_placar(int m, int n, char v[]) {
     }
     for(i; i < m+n; i++){ 
         v[i] = 'B';
-        printf("%c", v[i]);
+        printf("%c", v[i]);  
     }
     
 }
 
-void placar_possiveis(int m, int n, char v[], int aux) {
-    int i;
-    for(i = 0; i < m+n; i++) 
-        if(v[i] == 'B') 
+void placar_possiveis(int m, int n, char v[], int x) {
+    int i, aux;
+    for(i = x; i < m + n; i++) 
+        if(v[i] == 'B') {
             aux = i;
-    
+            break;
+        }
+    if(v[x] != 'B') {
+        printf("\n");
+        v[aux] = 'A';
+        v[aux-1] = 'B';
+        for(i = 0; i < m+n; i++) 
+            printf("%c", v[i]);
+        placar_possiveis(m, n, v, x);
+    }
 }

@@ -2,6 +2,7 @@
 #include "functions.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 int potencia(int x, int y) {
     int r = 1;
     for(int i = 0; i < y; i++) 

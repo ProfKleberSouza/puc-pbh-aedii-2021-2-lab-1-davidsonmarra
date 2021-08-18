@@ -5,13 +5,14 @@
 
 int main() {
   // ENTRADA DE DADOS
-  int m, n, aux;
+  int m, n;
   scanf("%d %d", &m, &n);
 
   char *vetor = (char*)malloc((n+m)*sizeof(char));
   // PROCESSAMENTO E SAIDA
   monta_placar(m, n, vetor);
-  placar_possiveis(m, n, vetor, aux);
+  for(int i = 0; i < n; i++)
+    placar_possiveis(m, n, vetor, i);
 
   return 0;
 }
