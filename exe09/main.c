@@ -13,6 +13,9 @@ int main() {
   monta_placar(m, n, vetor);
   for(int i = 0; i < n; i++)
     placar_possiveis(m, n, vetor, i);
+  if(n > 1 && m > 1) {
+    placar_restante(m, n, vetor);
+  }
 
   return 0;
 }

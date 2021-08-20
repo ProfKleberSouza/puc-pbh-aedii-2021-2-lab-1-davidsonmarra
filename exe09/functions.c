@@ -30,3 +30,21 @@ void placar_possiveis(int m, int n, char v[], int x) {
         placar_possiveis(m, n, v, x);
     }
 }
+
+void placar_restante(int m, int n, char v[]) {
+    int i;
+    printf("\n");
+    for(i = 0; i < n; i++)  {
+        v[i] = 'A';
+        printf("%c", v[i]);
+    }
+    for(i = n; i < 2*n; i++) {
+        v[i] = 'B';
+        printf("%c", v[i]);
+    }
+    for(i; i < m+n; i++) {
+        v[i] = 'A';
+        printf("%c", v[i]);
+    }
+    
+}
